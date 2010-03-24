@@ -73,7 +73,7 @@ jQuery.entropy = (function($) {
 				getBound: function(){
 					var bound = this.data('bound');
 					
-					if (typeof(bound) == 'undefined') {
+					if (typeof(bound) == 'undefined' || bound == null) {
 						bound = {};
 						this.data('bound', bound);
 					}
@@ -83,7 +83,7 @@ jQuery.entropy = (function($) {
 				getListeners: function(){
 					var listeners = this.data('listeners');
 					
-					if (typeof(listeners) == 'undefined') {
+					if (typeof(listeners) == 'undefined' || listeners == null) {
 						listeners = [];
 						this.data('listeners', listeners);
 					}
